@@ -1,44 +1,39 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Demo Flex</title>
   <script>
     // Simple function to toggle Element Visibility
     function toggle(elm) {
       let e = document.querySelector(elm);
-      e.style.display = (e.style.display == 'none') ? 'block' : 'none';			
+      e.style.display = (e.style.display == 'none') ? 'block' : 'none';
     }
   </script>
   <style>
   html, body {
-    width:100%; 
-    height:100%; 
-    padding:0; 
-    margin:0; 
-    left:0; 
-    top:0;}
-  #app {
-    display: flex;
-    flex-flow: column;
     width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+  }
+  #app {
+    display: grid;
+    grid-template-rows: 2fr auto 1fr;
     height:100%;
   }
   #header {
-    width:100%;
     background: #900C3F;
     text-align:center;
     flex: 1;
   }
   #body {
-    width:100%;
-    flex: 100%;
     background: #DAF7A6;
     overflow-x:hidden;
     overflow-y:scroll;
   }
   #footer {
     background: #C70039;
-    width:100%;
     flex: 1
   }
   .header-content {
