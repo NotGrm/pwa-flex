@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <title>Demo Flex</title>
+  <script>
+    // Simple function to toggle Element Visibility
+    function toggle(elm) {
+      let e = document.querySelector(elm);
+      e.style.display = (e.style.display == 'none') ? 'block' : 'none';			
+    }
+  </script>
+  <style>
+  html, body {
+    width:100%; 
+    height:100%; 
+    padding:0; 
+    margin:0; 
+    left:0; 
+    top:0;}
+  #app {
+    display: flex;
+    flex-flow: column;
+    width:100%;
+    height:100%;
+  }
+  #header {
+    width:100%;
+    background: #900C3F;
+    text-align:center;
+    flex: 1;
+  }
+  #body {
+    width:100%;
+    flex: 100%;
+    background: #DAF7A6;
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  #footer {
+    background: #C70039;
+    width:100%;
+    flex: 1
+  }
+  .header-content {
+    padding:1em;
+    font-size:2em;
+    color: #fff;
+  }
+  .footer-content {
+    line-height:3em;
+    color: #fff;
+  }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <div class="header-content">
+        MY PWA APP
+      </div>
+    </div>
+    <div id="body">
+      <button type="button" onclick="toggle('#footer')">Toogle footer</button>
+      <hr />
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies blandit purus, eu molestie turpis viverra ut. Donec accumsan ex non mi dapibus ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et dui eget metus blandit dignissim. Etiam iaculis ipsum lorem, id euismod massa interdum nec. Aenean et ultricies metus. Morbi pellentesque nec elit non luctus. Etiam cursus odio id purus luctus blandit. Aliquam ut interdum augue. Maecenas laoreet, lorem a ultrices molestie, eros lacus auctor enim, non aliquet dui erat sit amet diam. Vivamus finibus, velit at pulvinar laoreet, nisl sem gravida tortor, vitae condimentum nunc tellus et ligula. Morbi sit amet sem sit amet mi pharetra tempor et at turpis. Sed a sagittis ex. Sed commodo ligula id felis hendrerit, sit amet ultricies arcu elementum.
+      </p>
+      <p>
+        Aliquam non tincidunt lorem, id placerat neque. Duis placerat risus faucibus arcu luctus aliquam. Aliquam ullamcorper diam eros, in consectetur nisi rhoncus et. Etiam dolor quam, cursus maximus odio ut, placerat ornare orci. Suspendisse sit amet sapien placerat, volutpat diam et, porttitor neque. Proin porta cursus quam quis gravida. Praesent ac posuere urna. Nunc finibus euismod mauris, vel euismod mauris pulvinar vel. Proin hendrerit arcu nec ipsum sodales, sit amet rhoncus sem iaculis. Vivamus turpis turpis, fermentum at sagittis vel, aliquam nec orci. Cras elementum enim neque, ut pharetra urna ornare vitae. Etiam bibendum ipsum sit amet risus sodales placerat. Nulla facilisi. Suspendisse vel porta mauris, accumsan convallis ante. Donec quis est id nibh accumsan commodo.
+      </p>
+      <p>
+        Aenean ultricies dolor in urna convallis, consectetur tincidunt nisi dictum. Duis malesuada aliquet ante et tincidunt. Duis varius viverra ipsum, vitae vestibulum erat cursus et. Cras pulvinar porttitor ultricies. Vivamus consequat nibh turpis, sit amet condimentum nunc fringilla ac. Nam a efficitur lectus. Quisque elementum augue non tempus porta.
+      </p>
+      <p>
+        Fusce eget leo eget neque ornare hendrerit. Nam pharetra non massa non lacinia. Cras in nulla nec odio scelerisque auctor vel nec ex. Proin laoreet urna ac varius dapibus. Pellentesque a metus massa. Duis viverra dapibus sem id fermentum. In interdum diam ut nibh malesuada dapibus. Vestibulum faucibus lectus nibh, sed commodo ligula finibus sed. Vivamus tincidunt, dolor non vestibulum molestie, lectus ante gravida ante, eu tincidunt nunc purus ut nunc.
+      </p>
+      <p>
+        Suspendisse auctor, eros et mollis consequat, augue ipsum mattis sapien, sit amet pretium ligula sem quis tellus. Etiam vestibulum enim eget quam hendrerit volutpat. Pellentesque interdum sodales diam, nec ultricies libero maximus id. Praesent consequat fringilla mauris sit amet ultricies. Nam maximus lacinia metus. Nam faucibus, augue in facilisis aliquet, sem lorem varius quam, quis pharetra nunc erat id ex. Nulla dapibus lorem a ex consequat, ac sollicitudin risus malesuada. Etiam sit amet nisi at enim euismod bibendum at interdum justo.
+      </p>
+    </div>
+    <div id="footer">
+      <div class="footer-content">
+        Here is my footer
+      </div>
+    </div>
+  </div>
+</body>
+</html>
